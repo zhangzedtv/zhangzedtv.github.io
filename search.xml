@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>AI和机器学习</title>
+      <link href="/2023/06/13/ai-he-ji-qi-xue-xi/"/>
+      <url>/2023/06/13/ai-he-ji-qi-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<p>AI框架<br>华为 MindSpore<br>百度 飞桨(Paddle): <a href="https://www.paddlepaddle.org.cn/">https://www.paddlepaddle.org.cn/</a> </p><h2 id="LLM"><a href="#LLM" class="headerlink" title="LLM"></a>LLM</h2><p>关键因素：训练数据 参数量 </p><ul><li><p>Google<br>Palm2 - 3.6万亿token；3400亿参数<br>palm  - 7800亿token； 5400亿参数<br>4种尺寸： Gecko（壁虎），Otter（水獭），Bison（野牛），Unicorn（独角兽）<br>聊天机器人：Bard</p></li><li><p>OpenAI<br>GPT-4<br>聊天机器人：ChatGPT<br>github co-pilot</p></li><li><p>Meta<br>LLaMA(META) - 1.4万亿token</p></li></ul><p>OpenAI CEO Sam Altman: 未来十年内 人类将拥有非常强大的 AGI(通用人工智能) 在各个领域超越人类专家, 安全问题重要而紧迫, 需要各国协作.<br>我们无法检查一个 AI 生成的二进制代码模型是否在做一些邪恶的事情</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
