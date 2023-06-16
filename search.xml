@@ -4,12 +4,75 @@
   
     
     <entry>
-      <title>AI_ML</title>
-      <link href="/2023/06/15/ai-ml/"/>
-      <url>/2023/06/15/ai-ml/</url>
+      <title>daishu</title>
+      <link href="/2023/06/15/daishu/"/>
+      <url>/2023/06/15/daishu/</url>
       
-        <content type="html"><![CDATA[<p><img src="/./AI-ML/ml-01.png"></p>]]></content>
+        <content type="html"><![CDATA[<ul><li><p>等差数列<br>q:公差 n:相数 Sn:求和</p><ul><li>An &#x3D; A1 + q(n-1)</li><li>Sn &#x3D; (A1 + An) * n&#x2F;2</li><li>n &#x3D; (An-A1)&#x2F;n + 1</li><li>if m+n &#x3D; p+q then Am+An &#x3D; Ap+Aq</li></ul></li><li><p>等比数列<br>q:公比</p><ul><li>An &#x3D; A1*q^(n-1)</li><li>q !&#x3D; 1 : Sn &#x3D; A1*(1-q^n)&#x2F;(1-q)</li><li>q &#x3D;&#x3D; 1 : Sn &#x3D; n*A1</li><li>if m+n &#x3D; p+q then Am<em>An &#x3D; Ap</em>Aq</li></ul></li><li><p>斐波那契数列</p><ul><li>Fn &#x3D; F(n-1) + F(n-2)</li></ul></li></ul>]]></content>
       
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>gailv</title>
+      <link href="/2023/06/15/gailv/"/>
+      <url>/2023/06/15/gailv/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>条件概率</p></li><li><p>全概公式<br>  P(B) &#x3D; P(A1)*P(B|A1) + … + P(An)*P(B|An)</p></li><li><p>贝叶斯公式<br>  P(A|B) &#x3D; P(B|A)*P(A)&#x2F;P(B)</p></li><li><p>数学期望: 反应事件的平均结果<br>  E(x) &#x3D; X1<em>P(X1) + … + Xn</em>P(Xn)</p></li><li><p>方差: 反应事件的离散度 （风险）<br>  D(x) &#x3D; Sum[((Xi - E(x))^2)P(Xi)]</p></li><li><p>标准差: 方差的平方根</p></li><li><p>组合</p><ul><li>C(n,m) &#x3D; n!&#x2F;(n-m)!(m!)</li><li>Cm &#x3D; C(n-m)</li><li>C(n,0) &#x3D; C(n,n) &#x3D; 1</li></ul></li><li><p>排列</p><ul><li>A(n,m) &#x3D; n!&#x2F;(n-m)!</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>激活函数 - Activation Function</title>
+      <link href="/2023/06/15/jhhs/"/>
+      <url>/2023/06/15/jhhs/</url>
+      
+        <content type="html"><![CDATA[<p>激活函数就是在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端。对于人工神经网络模型去学习、理解非常复杂和非线性的函数来说具有十分重要的作用。它们将非线性特性引入到我们的网络中。如下图，在神经元中，输入的 inputs 通过加权，求和后，还被作用了一个函数，这个函数就是激活函数。引入激活函数是为了增加神经网络模型的非线性。没有激活函数的每层都相当于矩阵相乘,是上一层的线性函数。就算你叠加了若干层之后，无非还是个矩阵相乘罢了,是最原始的感知机。</p><p><img src="/./jhhs/jihuohanshu-1.webp" alt="图1"></p><h2 id="1-Sigmoid函数"><a href="#1-Sigmoid函数" class="headerlink" title="1. Sigmoid函数"></a>1. Sigmoid函数</h2><p>Sigmoid函数是一个在生物学中常见的S型函数，也称为S型生长曲线。在信息科学中，由于其单增以及反函数单增等性质，Sigmoid函数常被用作神经网络的阈值函数，将变量映射到(0,1)之间 公式如下</p><p><img src="/./jhhs/jihuohanshu-2.svg"></p><p>函数图像如下</p><p><img src="/./jhhs/jihuohanshu-3.jpg"></p><h2 id="2-Tanh函数"><a href="#2-Tanh函数" class="headerlink" title="2. Tanh函数"></a>2. Tanh函数</h2><p>Tanh是双曲函数中的一个，Tanh()为双曲正切。在数学中，双曲正切“Tanh”是由基本双曲函数双曲正弦和双曲余弦推导而来。公式如下</p><p><img src="/./jhhs/jihuohanshu-4.svg"></p><p>函数图像如下</p><p><img src="/./jhhs/jihuohanshu-5.jpg"></p><h2 id="3-ReLU函数"><a href="#3-ReLU函数" class="headerlink" title="3. ReLU函数"></a>3. ReLU函数</h2><p>Relu激活函数（The Rectified Linear Unit），用于隐层神经元输出。公式如下</p><p><img src="/./jhhs/jihuohanshu-6.svg"></p><p>函数图像如下</p><p><img src="/./jhhs/jihuohanshu-7.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>RNN-Recurrent Neutral Network</title>
+      <link href="/2023/06/15/rnn/"/>
+      <url>/2023/06/15/rnn/</url>
+      
+        <content type="html"><![CDATA[<p>RNN是一种特殊的神经网络结构, 它是根据”人的认知是基于过往的经验和记忆”这一观点提出的. 它与DNN,CNN不同的是: 它不仅考虑当前时刻的输入,而且赋予了网络对前面的内容的一种’记忆’功能.</p><p>RNN之所以称为循环神经网路，即一个序列当前的输出与前面的输出也有关。具体的表现形式为网络会对前面的信息进行记忆并应用于当前输出的计算中，即隐藏层之间的节点不再无连接而是有连接的，并且隐藏层的输入不仅包括输入层的输出还包括上一时刻隐藏层的输出。</p><h2 id="RNN的应用领域"><a href="#RNN的应用领域" class="headerlink" title="RNN的应用领域:"></a>RNN的应用领域:</h2><p>只要考虑时间先后顺序的问题都可以使用RNN来解决.这里主要说一下几个常见的应用领域</p><ul><li><p>自然语言处理(NLP): 主要有视频处理, 文本生成, 语言模型, 图像处理</p></li><li><p>机器翻译, 机器写文章</p></li><li><p>语音识别</p></li><li><p>图像描述生成</p></li><li><p>文本相似度计算</p></li><li><p>推荐系统。例如：音乐推荐、网易考拉商品推荐、Youtube视频推荐等新的应用领域。</p></li></ul><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>如下图所示, 我们可以看到RNN层级结构较之于CNN来说比较简单, 它主要有输入层,Hidden Layer, 输出层组成.</p><p>并且会发现在Hidden Layer 有一个箭头表示数据的循环更新, 这个就是实现时间记忆功能的方法.</p><img src="/2023/06/15/rnn/RNN-1.png" class=""><p>t-1, t, t+1表示时间序列. X表示输入的样本. St表示样本在时间t处的的记忆 <code>St = f(W*St-1 +U*Xt)</code> W表示输入的权重, U表示此刻输入的样本的权重, V表示输出的样本权重. 在t &#x3D;1时刻, 一般初始化输入S0&#x3D;0, 随机初始化W,U,V, 进行下面的公式计算:</p><img src="/2023/06/15/rnn/RNN-2.png" class=""><p>其中,f和g均为激活函数. 其中f可以是tanh,relu,sigmoid等激活函数，g通常是softmax也可以是其他。 时间就向前推进，此时的状态s1作为时刻1的记忆状态将参与下一个时刻的预测活动，也就是:</p><img src="/2023/06/15/rnn/RNN-3.png" class=""><p>以此类推, 可以得到最终的输出值为:</p><img src="/2023/06/15/rnn/RNN-4.png" class=""><h1 id="RNN-的缺陷及改进算法"><a href="#RNN-的缺陷及改进算法" class="headerlink" title="RNN 的缺陷及改进算法"></a>RNN 的缺陷及改进算法</h1><p>RNN 处理时间序列的问题的效果很好, 但是仍然存在着一些问题, 其中较为严重的是容易出现梯度消失或者梯度爆炸的问题, 梯度消失主要指由于时间过长而造成记忆值较小的现象.</p><p>为了缓解传递间的梯度和遗忘问题，设计了各种各样的 RNN cell，最著名的两个就是LSTM和GRU.</p><p>对于梯度消失: 由于它们都有特殊的方式存储”记忆”，那么以前梯度比较大的”记忆”不会像简单的RNN一样马上被抹除，因此可以一定程度上克服梯度消失问题。</p><p>对于梯度爆炸: gradient clipping，就是当你计算的梯度超过阈值c或者小于阈值-c的时候，便把此时的梯度设置成c或-c。 </p><p>LSTM (Long Short Term Memory): </p><img src="/2023/06/15/rnn/LSTM.png" class=""><p>GRU (Gated Recurrent Unit) : </p><img src="/2023/06/15/rnn/GRU.png" class=""><h2 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h2><p>ransformer 是Google Brain 2017的提出的一篇工作，它针对RNN的弱点进行重新设计，解决了RNN效率问题和传递中的缺陷等，在很多问题上都超过了RNN的表现。Transfromer的基本结构如下图所示，它是一个N进N出的结构，也就是说每个Transformer单元相当于一层的RNN层，接收一整个句子所有词作为输入，然后为句子中的每个词都做出一个输出。但是与RNN不同的是，Transformer能够同时处理句子中的所有词，并且任意两个词之间的操作距离都是1，这么一来就很好地解决了上面提到的RNN的效率问题和距离问题。</p><img src="/2023/06/15/rnn/transformer.png" class=""><p>参考 :</p><ol><li><a href="https://zhuanlan.zhihu.com/p/69290203">https://zhuanlan.zhihu.com/p/69290203</a></li><li><a href="https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517">https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517</a></li><li><a href="https://blog.csdn.net/qq_39521554/article/details/80083592">https://blog.csdn.net/qq_39521554/article/details/80083592</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
       
       
     </entry>
@@ -44,11 +107,11 @@
     
     
     <entry>
-      <title>AI和机器学习</title>
-      <link href="/2023/06/13/ai-he-ji-qi-xue-xi/"/>
-      <url>/2023/06/13/ai-he-ji-qi-xue-xi/</url>
+      <title>AI和机器学习综述</title>
+      <link href="/2023/06/13/ai-ml/"/>
+      <url>/2023/06/13/ai-ml/</url>
       
-        <content type="html"><![CDATA[<h2 id="为什么学习-AI"><a href="#为什么学习-AI" class="headerlink" title="为什么学习 AI"></a>为什么学习 AI</h2><p>随着 ChatGPT 的爆火, AI已成为新一轮科技革命的主要驱动力, 将贯穿各个领域, 各个行业. 一个 GPT 是远远不够的, 各大科技公司都在开发自己的大模型, 各国之间也展开了激烈的竞争. 可谓得 AI 者得天下. 每个人都应该学习如何使用它们来提高工作效率, 解决实际问题. 不一定每个人都要掌握背后复杂的机器学习算法及原理, 就像互联网刚兴起的时候, 我们只需要学习怎么使用电脑和网络, 并不需要掌握 Http 网络协议或者计算机底层架构.<br>机器学习模型需要结合各个垂直领域的数据及专业知识来进行优化, 训练, 调参, 以解决各种复杂的专业问题.  作为一个开发人员, 我们不仅要知道各种机器学习模型适合解决的问题, 还要学习其背后的算法原理, 才能更好的应用到我们自己需要解决的问题中.</p><h2 id="机器学习的分类"><a href="#机器学习的分类" class="headerlink" title="机器学习的分类"></a>机器学习的分类</h2><p>AI框架<br>华为 MindSpore<br>百度 飞桨(Paddle): <a href="https://www.paddlepaddle.org.cn/">https://www.paddlepaddle.org.cn/</a> </p><h2 id="LLM"><a href="#LLM" class="headerlink" title="LLM"></a>LLM</h2><p>关键因素：训练数据 参数量 </p><ul><li><p>Google<br>Palm2 - 3.6万亿token；3400亿参数<br>palm  - 7800亿token； 5400亿参数<br>4种尺寸： Gecko（壁虎），Otter（水獭），Bison（野牛），Unicorn（独角兽）<br>聊天机器人：Bard</p></li><li><p>OpenAI<br>GPT-4<br>聊天机器人：ChatGPT<br>github co-pilot</p></li><li><p>Meta<br>LLaMA(META) - 1.4万亿token</p></li></ul><h2 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h2><p>OpenAI CEO Sam Altman: 未来十年内 人类将拥有非常强大的 AGI(通用人工智能) 在各个领域超越人类专家, 安全问题重要而紧迫, 需要各国协作.<br>我们无法检查一个 AI 生成的二进制代码模型是否在做一些邪恶的事情</p><h2 id="应用举例"><a href="#应用举例" class="headerlink" title="应用举例"></a>应用举例</h2><h3 id="TensorFlow"><a href="#TensorFlow" class="headerlink" title="TensorFlow"></a>TensorFlow</h3><p><a href="http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.77751&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false">http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=circle&amp;regDataset=reg-plane&amp;learningRate=0.03&amp;regularizationRate=0&amp;noise=0&amp;networkShape=4,2&amp;seed=0.77751&amp;showTestData=false&amp;discretize=false&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false</a></p><h3 id="量化投资"><a href="#量化投资" class="headerlink" title="量化投资"></a>量化投资</h3><p>通过海量的数据分析找到一些影响股票价格的因素, 从而建立模型预测股票的价格. 利用模型扑捉价差，获得持续稳定的收益，从而避免了人为主观因素干扰。目前国内百亿规模的量化私募基金已经超过 100 只, 并且很多都在积极的从传统的量化策略转向机器学习模型.</p><ol><li>金融数据的获取<br>我们可以通过多种途径获取金融数据，业内的许多公司会购买Wind、恒生聚源等数据提供商的数据库，若尚未入行，则也可以通过非常多的第三方策略平台获取免费数据，例如优矿、聚宽、米筐等。<br>Tushare是一个免费、开源的python财经数据接口包，不带任何商业性质和目的。数据内容包含股票、基金、期货、债券、外汇、行业大数据等，同时包括了数字货币行情等区块链数据的全数据品类的金融大数据平台，为各类金融投资和研究人员提供适用的数据和工具。</li></ol><h3 id="Amazon-Sagemaker"><a href="#Amazon-Sagemaker" class="headerlink" title="Amazon Sagemaker"></a>Amazon Sagemaker</h3><h3 id="Amazon-Whisperer-VS-OpenAI-co-pilot"><a href="#Amazon-Whisperer-VS-OpenAI-co-pilot" class="headerlink" title="Amazon Whisperer VS OpenAI co-pilot"></a>Amazon Whisperer VS OpenAI co-pilot</h3>]]></content>
+        <content type="html"><![CDATA[<h2 id="为什么学习-AI"><a href="#为什么学习-AI" class="headerlink" title="为什么学习 AI"></a>为什么学习 AI</h2><p>随着 ChatGPT 的爆火, AI已成为新一轮科技革命的主要驱动力, 将贯穿各个领域, 各个行业. 一个 GPT 是远远不够的, 各大科技公司都在开发自己的大模型, 各国之间也展开了激烈的竞争. 可谓得 AI 者得天下. 每个人都应该学习如何使用它们来提高工作效率, 解决实际问题. 不一定每个人都要掌握背后复杂的机器学习算法及原理, 就像互联网刚兴起的时候, 我们只需要学习怎么使用电脑和网络, 并不需要掌握 Http 网络协议或者计算机底层架构.<br>机器学习模型需要结合各个垂直领域的数据及专业知识来进行优化, 训练, 调参, 以解决各种复杂的专业问题.  作为一个开发人员, 我们不仅要知道各种机器学习模型适合解决的问题, 还要学习其背后的算法原理, 才能更好的应用到我们自己需要解决的问题中.</p><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul><li>AGI: Artificial General Intelligence, “通用人工智能”，亦被称为强 AI，该术语指的是在任何你可以想象的人类的专业领域内，具备相当于人类智慧程度的 AI，一个 AGI 可以执行任何人类可以完成的任务。</li><li>AIGC: AI generated content，又称为生成式AI. AI从理解 识别内容，走向了自动生成内容，包括AIGC用于作画、图文、视频等多类型的内容创作.</li><li>LLM: Large Language Model, 大语言模型是指使用大量文本数据训练的深度学习模型，可以生成自然语言文本或理解语言文本的含义。</li><li>Transformer: 是Google Brain 2017的提出的，它针对RNN的弱点进行重新设计，解决了RNN效率问题和传递中的缺陷等，在很多问题上都超过了RNN的表现.</li><li>GPT: Generative Pre-trained Transformer，是一种基于Transformer模型的预训练语言模型.</li><li>BERT: Bidirectional Encoder Representations from Transformers, 通过在大规模的无标注语料上进行预训练学习，得到的模型可以应用于多个类型的下游任务，具体实现方式就是在具体下游任务的数据集上进行微调（fine-turn）学习。预训练的过程可以理解为我们学习基础知识，比如学习英语时的背单词，而微调就是具体的学习任务，比如完形填空，阅读理解等具体任务。</li><li>ML: Machine Learning, 是实现人工智能的一种最主要的技术</li><li>DL: Deep Learning, 是机器学习中的一个分支</li></ul><table><thead><tr><th>LLM</th><th>Comp.</th><th>参数量(十亿)</th><th>token量(万亿)</th><th>应用</th></tr></thead><tbody><tr><td>GPT</td><td>OpenAI</td><td>175B</td><td>-</td><td>ChatGPT</td></tr><tr><td>Palm2</td><td>Google</td><td>54B</td><td>3.6</td><td>Bard</td></tr><tr><td>LLaMA</td><td>Meta</td><td>-</td><td>1.4</td><td>Jarvis</td></tr></tbody></table><h2 id="机器学习的分类"><a href="#机器学习的分类" class="headerlink" title="机器学习的分类"></a>机器学习的分类</h2><img src="/2023/06/13/ai-ml/ml-01.png" class=""><ul><li><p>强化学习: 高阶的ML, 通过大量的action和reward 训练出policy使reward最大化</p></li><li><p>传统机器学习: 应用于早期比较简单数据量比较少的任务, 需要手动提取特征</p><ul><li>SVM 支持向量机</li><li>逻辑回归</li><li>线性回归</li><li>决策树</li><li>随机森林</li></ul></li><li><p>深度学习: 复杂数据量大的任务 CV, NLP, AR</p><ul><li>ANN: 人工神经网络 简称 NN (Neural Network) </li><li>RNN: 循环神经网络 Recurrent NN </li><li>CNN: 卷积神经网络 Convolutional NN</li><li>LSTM: 长短期记忆</li></ul></li></ul><h2 id="常用的机器学习库"><a href="#常用的机器学习库" class="headerlink" title="常用的机器学习库"></a>常用的机器学习库</h2><ul><li>TensorFlow: Google开源API 兼容Python 和 C, 前身是google神经网络算法库 “DistBelief”</li><li>PyTorch: 是一个开源的Python机器学习库，基于Torch，用于自然语言处理等应用程序。PyTorch既可以看作加入了GPU支持的numpy，同时也可以看成一个拥有自动求导功能的强大的深度神经网络.</li><li>scikit-learn(SKLearn) , 包含了除了深度学习和强化学习的几乎所有传统模型. Python的免费机器学习库. 具有各种分类,回归,聚类算法: 支持向量机 随机森林 梯度提升 … 它底层使用Scipy数据结构，与Python中其余使用Scipy、Numpy、Pandas和Matplotlib进行科学计算的部分适应地很好.</li><li>Keras：Python的人工神经网络开源库 支持后台转为TensorFlow &#x2F; Microsoft-CNTK &#x2F; Theano</li></ul><h2 id="应用举例"><a href="#应用举例" class="headerlink" title="应用举例"></a>应用举例</h2><h3 id="时间序列数据预测-–-Amazon-SageMaker-DeepAR"><a href="#时间序列数据预测-–-Amazon-SageMaker-DeepAR" class="headerlink" title="时间序列数据预测 – Amazon SageMaker DeepAR"></a>时间序列数据预测 – Amazon SageMaker DeepAR</h3><p>Amazon SageMaker 是一项完全托管的机器学习服务。借助 SageMaker 开发人员可以快速、轻松地构建和训练机器学习模型，然后直接将模型部署到生产环境中。它提供了一个集成的 Jupyter Notebook 实例，供您轻松访问数据源以便进行探索和分析，因此您无需管理服务器。此外，它还可以提供常见的机器学习算法，这些算法经过了优化，可以在分布式环境中高效处理大数据。<br>Amazon Sagemaker支持多种深度学习框架，包括PyTorch、TensorFlow、Apache MXNet、Chainer、Gluon、Keras、Scikit-learn和deep - graph库。</p><p>DeepAR:<br>Amazon provided supervised learning algorithm for forecasting scalar (one-dimensional) time series using recurrent neural networks (RNN).<br>When your dataset contains hundreds of related time series, DeepAR outperforms the standard ARIMA and ETS methods.</p><h3 id="量化交易"><a href="#量化交易" class="headerlink" title="量化交易"></a>量化交易</h3><p>詹姆斯·西蒙斯:量化投资鼻祖、数学家、对冲基金经理。1988年成立文艺复兴科技公司,旗舰产品大奖章基金年均回报率高达35%,投资业绩远超股神巴菲特和投机大鳄索罗斯.</p><p>通过海量的数据分析找到一些影响股票价格的因素, 从而建立模型预测股票的价格. 利用模型扑捉价差，获得持续稳定的收益，从而避免了人为主观因素干扰。目前国内百亿规模的量化私募基金已经超过 100 只, 并且很多都在积极的从传统的量化策略转向机器学习模型.</p><ul><li>金融数据的获取</li></ul><p>我们可以通过多种途径获取金融数据，业内的许多公司会购买Wind、恒生聚源等数据提供商的数据库，若尚未入行，则也可以通过非常多的第三方策略平台获取免费数据，例如优矿、聚宽、米筐等。</p><p><code> https://tushare.pro/</code></p><p>Tushare是一个免费、开源的python财经数据接口包，不带任何商业性质和目的。数据内容包含股票、基金、期货、债券、外汇、行业大数据等，同时包括了数字货币行情等区块链数据的全数据品类的金融大数据平台，为各类金融投资和研究人员提供适用的数据和工具。</p><ul><li><p>数据预处理: 为了让模型更具有普适性, 需要对训练数据进行处理: 标准化处理, 中性化处理, 缺失值处理, 归一化等</p></li><li><p>选取因子&#x2F;特征: 根据专业知识及经验选取影响股价的因子: 基本面 技术面 资金面 情绪面 政策面 …</p></li><li><p>选择 ML 模型建模: 适用于股票预测的机器学习模型: LSTM(RNN), 随机森林, 逻辑回归, 支持向量机 …</p></li></ul><h3 id="Code-recomendation"><a href="#Code-recomendation" class="headerlink" title="Code recomendation"></a>Code recomendation</h3><ul><li>Amazon Whisperer </li><li>OpenAI co-pilot</li></ul>]]></content>
       
       
       <categories>
