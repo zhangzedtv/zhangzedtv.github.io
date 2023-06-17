@@ -4,14 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="代数, AI 机器学习 深度学习 Quant 量化 策略">
-    <meta name="description" content="
-等差数列q:公差 n:相数 Sn:求和
-
-An &amp;#x3D; A1 + q(n-1)
-Sn &amp;#x3D; (A1 + An) * n&amp;#x2F;2
-n &amp;#x3D; (An-A1)&amp;#x2F;n + 1
-if m+n &amp;#x3D; p+q">
+    <meta name="keywords" content="lhjy-ml, AI 机器学习 深度学习 Quant 量化 策略">
+    <meta name="description" content="量化交易詹姆斯·西蒙斯:量化投资鼻祖、数学家、对冲基金经理。1988年成立文艺复兴科技公司,旗舰产品大奖章基金年均回报率高达35%,投资业绩远超股神巴菲特和投机大鳄索罗斯.
+通过海量的数据分析找到一些影响股票价格的因素, 从而建立模型预测股">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +18,7 @@ if m+n &amp;#x3D; p+q">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>代数 | ze的博客</title>
+    <title>lhjy-ml | ze的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -275,12 +270,12 @@ if m+n &amp;#x3D; p+q">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">代数</h1>
+                    <h1 class="description center-align post-title">lhjy-ml</h1>
                 </div>
             </div>
         </div>
@@ -309,15 +304,6 @@ if m+n &amp;#x3D; p+q">
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
-                                数学
-                            </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
 
@@ -325,7 +311,7 @@ if m+n &amp;#x3D; p+q">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-15
+                    2023-06-17
                 </div>
                 
 
@@ -334,7 +320,7 @@ if m+n &amp;#x3D; p+q">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    102
+                    497
                 </div>
                 
 
@@ -364,27 +350,20 @@ if m+n &amp;#x3D; p+q">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><p>等差数列<br>q:公差 n:相数 Sn:求和</p>
+                <h2 id="量化交易"><a href="#量化交易" class="headerlink" title="量化交易"></a>量化交易</h2><p>詹姆斯·西蒙斯:量化投资鼻祖、数学家、对冲基金经理。1988年成立文艺复兴科技公司,旗舰产品大奖章基金年均回报率高达35%,投资业绩远超股神巴菲特和投机大鳄索罗斯.</p>
+<p>通过海量的数据分析找到一些影响股票价格的因素, 从而建立模型预测股票的价格. 利用模型扑捉价差，获得持续稳定的收益，从而避免了人为主观因素干扰。目前国内百亿规模的量化私募基金已经超过 100 只, 并且很多都在积极的从传统的量化策略转向机器学习模型.</p>
 <ul>
-<li>An &#x3D; A1 + q(n-1)</li>
-<li>Sn &#x3D; (A1 + An) * n&#x2F;2</li>
-<li>n &#x3D; (An-A1)&#x2F;n + 1</li>
-<li>if m+n &#x3D; p+q then Am+An &#x3D; Ap+Aq</li>
+<li>金融数据的获取</li>
 </ul>
+<p>我们可以通过多种途径获取金融数据，业内的许多公司会购买Wind、恒生聚源等数据提供商的数据库，若尚未入行，则也可以通过非常多的第三方策略平台获取免费数据，例如优矿、聚宽、米筐等。</p>
+<p><code> https://tushare.pro/</code></p>
+<p>Tushare是一个免费、开源的python财经数据接口包，不带任何商业性质和目的。数据内容包含股票、基金、期货、债券、外汇、行业大数据等，同时包括了数字货币行情等区块链数据的全数据品类的金融大数据平台，为各类金融投资和研究人员提供适用的数据和工具。</p>
+<ul>
+<li><p>数据预处理: 为了让模型更具有普适性, 需要对训练数据进行处理: 标准化处理, 中性化处理, 缺失值处理, 归一化等</p>
 </li>
-<li><p>等比数列<br>q:公比</p>
-<ul>
-<li>An &#x3D; A1*q^(n-1)</li>
-<li>q !&#x3D; 1 : Sn &#x3D; A1*(1-q^n)&#x2F;(1-q)</li>
-<li>q &#x3D;&#x3D; 1 : Sn &#x3D; n*A1</li>
-<li>if m+n &#x3D; p+q then Am<em>An &#x3D; Ap</em>Aq</li>
-</ul>
+<li><p>选取因子&#x2F;特征: 根据专业知识及经验选取影响股价的因子: 基本面 技术面 资金面 情绪面 政策面 …</p>
 </li>
-<li><p>斐波那契数列</p>
-<ul>
-<li>Fn &#x3D; F(n-1) + F(n-2)</li>
-</ul>
+<li><p>选择 ML 模型建模: 适用于股票预测的机器学习模型: LSTM(RNN), 随机森林, 逻辑回归, 支持向量机 …</p>
 </li>
 </ul>
 
@@ -413,7 +392,7 @@ if m+n &amp;#x3D; p+q">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhangzedtv.github.io/2023/06/15/daishu/">https://zhangzedtv.github.io/2023/06/15/daishu/</a>
+                    <a href="https://zhangzedtv.github.io/2023/06/17/lhjy-ml/">https://zhangzedtv.github.io/2023/06/17/lhjy-ml/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -761,9 +740,48 @@ if m+n &amp;#x3D; p+q">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/06/17/lhjy-ml/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="lhjy-ml">
+                        
+                        <span class="card-title">lhjy-ml</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Jason
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/06/17/amazon-sagemaker/">
                     <div class="card-image">
@@ -781,54 +799,13 @@ if m+n &amp;#x3D; p+q">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
                             Jason
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/06/15/gailv/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="概率">
-                        
-                        <span class="card-title">概率</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
-                                    数学
-                                </a>
-                            
                             
                         </span>
                     </div>
