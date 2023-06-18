@@ -341,7 +341,7 @@ header .side-nav .menu-list li {
 header .side-nav .menu-list a {
     height: 50px;
     line-height: 50px;
-    color: #34495e !important;
+    color:  !important;
 }
 
 .mobile-menu-list a i {
@@ -551,8 +551,8 @@ header .go-back i {
 }
 
 .bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
+    /* -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite; */
 }
 
 .bg-cover:before,
