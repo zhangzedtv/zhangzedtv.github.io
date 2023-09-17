@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>RMSE(root mean square error) 均方根误差</title>
+      <link href="/2023/06/28/rmse/"/>
+      <url>/2023/06/28/rmse/</url>
+      
+        <content type="html"><![CDATA[<h2 id="MSE-mean-square-error-均方差"><a href="#MSE-mean-square-error-均方差" class="headerlink" title="MSE (mean square error) 均方差"></a>MSE (mean square error) 均方差</h2><p>真实值和预测值的方差求平均:</p><img src="/2023/06/28/rmse/RMSE-1.png" class=""><h2 id="RMSE-root-mean-square-error-均方根误差"><a href="#RMSE-root-mean-square-error-均方根误差" class="headerlink" title="RMSE (root mean square error) 均方根误差"></a>RMSE (root mean square error) 均方根误差</h2><p>MSE的平方根</p><img src="/2023/06/28/rmse/RMSE-2.png" class=""><p>RMSE 与标准差计算公式类似, 区别如下:<br>标准差是用来衡量一组数据自身的离散程度, 数据的每个元素与平均值的偏差.<br>RMSE 用来衡量预测值和真实值的偏差.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>AI和机器学习综述</title>
       <link href="/2023/06/13/ai-ml/"/>
       <url>/2023/06/13/ai-ml/</url>
