@@ -48,6 +48,33 @@
     
     
     <entry>
+      <title>Amazon codeWhisperer</title>
+      <link href="/2023/06/14/amazon-codewhisperer/"/>
+      <url>/2023/06/14/amazon-codewhisperer/</url>
+      
+        <content type="html"><![CDATA[<p>Amazon CodeWhisperer is a general purpose, machine learning-powered code generator that provides software developers with code recommendations in real time. As you write code, CodeWhisperer analyzes the English language comments and surrounding code to infer what code is needed to complete the task at hand. Your personalized recommendations can vary in size and scope, ranging from a single line comment to fully formed functions. </p><p>The code suggestions provided by CodeWhisperer are based on a large language models (LLMs) trained on billions of lines of code, including Amazon and open-source code. </p><h2 id="how-to-use"><a href="#how-to-use" class="headerlink" title="how to use"></a>how to use</h2><p>Getting started with CodeWhisperer is straightforward and documented <a href="https://aws.amazon.com/codewhisperer/resources/">here</a>. After setup, CodeWhisperer integrates with the IDE and provides code suggestions based on comments written in the IDE. Use TAB to accept a suggestion, ESC to reject the suggestion ALT+C (Windows)&#x2F;Option + C(MAC) to force a suggestion, and left and right arrow keys to switch between suggestions.</p><h2 id="Internal-use-wiki"><a href="#Internal-use-wiki" class="headerlink" title="Internal use wiki:"></a>Internal use wiki:</h2><p><a href="https://w.amazon.com/bin/view/Consolas/InternalUse">https://w.amazon.com/bin/view/Consolas/InternalUse</a></p><h2 id="CodeWhisperer-currently-supports"><a href="#CodeWhisperer-currently-supports" class="headerlink" title="CodeWhisperer currently supports:"></a>CodeWhisperer currently supports:</h2><p>C#, Java, JavaScript, Python, TypeScript, C, C++, SQL, Kotlin, Go, Scala, PHP, Ruby, Rust, Shell and SQL</p><h2 id="Is-CodeWhisperer-capable-of-writing-unit-tests-for-existing-code"><a href="#Is-CodeWhisperer-capable-of-writing-unit-tests-for-existing-code" class="headerlink" title="Is CodeWhisperer capable of writing unit tests for existing code?"></a>Is CodeWhisperer capable of writing unit tests for existing code?</h2><p>As of now, CodeWhisperer only takes current file into context, so if your function is another file, then the test won’t have relevant info.</p><h2 id="useful-skills"><a href="#useful-skills" class="headerlink" title="useful skills :"></a>useful skills :</h2><ol><li><p>Once CodeWhisperer is enabled, you will receive code suggestions in your code editor as you type. To manually trigger CodeWhisperer, use Option+C (MacOS) or Alt+C (Windows).</p></li><li><p>CodeWhisperer works most efficiently when developer comments are short and map to smaller discrete tasks so that no single function or code block is too long. Similarly, CodeWhisperer can generate helpful code suggestions when developers use intuitive names for various code elements, such as function names. The more code that is available as surrounding context, the better the suggestion will be.</p></li><li><p>If CodeWhisperer detects that its output matches particular open-source training data, the built-in reference tracker will notify you with a reference to the license type (for example, MIT or Apache) and a URL for the open-source project. You can then more easily find and review the referenced code and see how it is used in the context of another project before deciding whether to use it.</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AIGC </tag>
+            
+            <tag> tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>AI和机器学习综述</title>
       <link href="/2023/06/13/ai-ml/"/>
       <url>/2023/06/13/ai-ml/</url>
