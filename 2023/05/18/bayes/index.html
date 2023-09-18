@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Amazon codeWhisperer, AI 机器学习 深度学习 Quant 量化 策略">
-    <meta name="description" content="Amazon CodeWhisperer is a general purpose, machine learning-powered code generator that provides software developers wit">
+    <meta name="keywords" content="深入理解贝叶斯公式：原理与应用, AI 机器学习 深度学习 Quant 量化 策略">
+    <meta name="description" content="
+“人生中最重要的问题，在绝大多数情况下，真的就只是概率问题。”— 皮埃尔-西蒙·拉普拉斯
+
+贝叶斯公式把数学公式上升到了哲学的高度，进化到了认知世界的方法论上。 用白话来阐述就是我们最新的认知，来源于我们过往的知识及所看到的事实。最近正在">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Amazon codeWhisperer | ze的博客</title>
+    <title>深入理解贝叶斯公式：原理与应用 | ze的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -269,12 +272,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Amazon codeWhisperer</h1>
+                    <h1 class="description center-align post-title">深入理解贝叶斯公式：原理与应用</h1>
                 </div>
             </div>
         </div>
@@ -298,12 +301,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/AIGC/">
-                                <span class="chip bg-color">AIGC</span>
-                            </a>
-                        
-                            <a href="/tags/tools/">
-                                <span class="chip bg-color">tools</span>
+                            <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/">
+                                <span class="chip bg-color">概率论</span>
                             </a>
                         
                     </div>
@@ -314,8 +313,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/AI/" class="post-category">
-                                AI
+                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
+                                数学
                             </a>
                         
                     </div>
@@ -327,7 +326,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-14
+                    2023-05-18
                 </div>
                 
 
@@ -336,14 +335,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    379
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -366,20 +365,34 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Amazon CodeWhisperer is a general purpose, machine learning-powered code generator that provides software developers with code recommendations in real time. As you write code, CodeWhisperer analyzes the English language comments and surrounding code to infer what code is needed to complete the task at hand. Your personalized recommendations can vary in size and scope, ranging from a single line comment to fully formed functions. </p>
-<p>The code suggestions provided by CodeWhisperer are based on a large language models (LLMs) trained on billions of lines of code, including Amazon and open-source code. </p>
-<h2 id="how-to-use"><a href="#how-to-use" class="headerlink" title="how to use"></a>how to use</h2><p>Getting started with CodeWhisperer is straightforward and documented <a target="_blank" rel="noopener" href="https://aws.amazon.com/codewhisperer/resources/">here</a>. After setup, CodeWhisperer integrates with the IDE and provides code suggestions based on comments written in the IDE. Use TAB to accept a suggestion, ESC to reject the suggestion ALT+C (Windows)&#x2F;Option + C(MAC) to force a suggestion, and left and right arrow keys to switch between suggestions.</p>
-<h2 id="Internal-use-wiki"><a href="#Internal-use-wiki" class="headerlink" title="Internal use wiki:"></a>Internal use wiki:</h2><p><a target="_blank" rel="noopener" href="https://w.amazon.com/bin/view/Consolas/InternalUse">https://w.amazon.com/bin/view/Consolas/InternalUse</a></p>
-<h2 id="CodeWhisperer-currently-supports"><a href="#CodeWhisperer-currently-supports" class="headerlink" title="CodeWhisperer currently supports:"></a>CodeWhisperer currently supports:</h2><p>C#, Java, JavaScript, Python, TypeScript, C, C++, SQL, Kotlin, Go, Scala, PHP, Ruby, Rust, Shell and SQL</p>
-<h2 id="Is-CodeWhisperer-capable-of-writing-unit-tests-for-existing-code"><a href="#Is-CodeWhisperer-capable-of-writing-unit-tests-for-existing-code" class="headerlink" title="Is CodeWhisperer capable of writing unit tests for existing code?"></a>Is CodeWhisperer capable of writing unit tests for existing code?</h2><p>As of now, CodeWhisperer only takes current file into context, so if your function is another file, then the test won’t have relevant info.</p>
-<h2 id="useful-skills"><a href="#useful-skills" class="headerlink" title="useful skills :"></a>useful skills :</h2><ol>
-<li><p>Once CodeWhisperer is enabled, you will receive code suggestions in your code editor as you type. To manually trigger CodeWhisperer, use Option+C (MacOS) or Alt+C (Windows).</p>
-</li>
-<li><p>CodeWhisperer works most efficiently when developer comments are short and map to smaller discrete tasks so that no single function or code block is too long. Similarly, CodeWhisperer can generate helpful code suggestions when developers use intuitive names for various code elements, such as function names. The more code that is available as surrounding context, the better the suggestion will be.</p>
-</li>
-<li><p>If CodeWhisperer detects that its output matches particular open-source training data, the built-in reference tracker will notify you with a reference to the license type (for example, MIT or Apache) and a URL for the open-source project. You can then more easily find and review the referenced code and see how it is used in the context of another project before deciding whether to use it.</p>
-</li>
-</ol>
+                <blockquote>
+<p>“人生中最重要的问题，在绝大多数情况下，真的就只是概率问题。”— 皮埃尔-西蒙·拉普拉斯</p>
+</blockquote>
+<p>贝叶斯公式把数学公式上升到了哲学的高度，进化到了认知世界的方法论上。 用白话来阐述就是我们最新的认知，来源于我们过往的知识及所看到的事实。最近正在读丹尼尔·卡尼曼的《思考，快与慢》，其中的核心思想是人们在做决策时，往往会受到快系统（直觉思维）的影响而产生一些偏见，这些偏见有时会导致人们的决策行为偏离基本的概率论原理，同时强调了初始概率对贝叶斯方法的重要性。<br>在现实生活中有很多事情我们没有办法做出100%正确的判断，只能通过掌握的知识和数据去逼近真相从而做出尽可能正确的选择。比如在投资中最重要的事情就是管理概率， 只要保证我们买入的资产未来大概率会上涨， 就能在长期投资中稳定盈利。而管理概率最重要的工具就是贝叶斯定理。</p>
+<p>贝叶斯公式是概率论中的重要工具，也是机器学习领域中常用的基础算法之一。它主要用于描述在给定条件下，某一事件发生的概率。在分类、预测等众多任务中，贝叶斯公式可以根据已有的数据集，快速有效地进行分类和预测。本篇文章将详细介绍贝叶斯公式的概念、原理和应用，帮助读者更好地理解和应用这一重要公式。</p>
+<h2 id="贝叶斯公式的基本概念和原理"><a href="#贝叶斯公式的基本概念和原理" class="headerlink" title="贝叶斯公式的基本概念和原理"></a>贝叶斯公式的基本概念和原理</h2><ul>
+<li>条件概率：在事件B已经发生的情况下，事件A发生的概率称为条件概率，记作P(A|B)。</li>
+<li>联合概率：两个事件A和B同时发生的概率称为联合概率，记作P(AB)。</li>
+</ul>
+<p>全概公式: </p>
+<p><code>P(B) = P(A1)*P(B|A1) + ... + P(An)*P(B|An)</code></p>
+<p>贝叶斯公式： </p>
+<p><code>P(Ai|B) = P(AiB) / P(B) = P(Ai) * P(B|Ai) / P(A1)*P(B|A1) + ... + P(An)*P(B|An)</code></p>
+<p>它表示在给定事件B发生的情况下，事件A发生的概率等于事件A和事件B同时发生的概率除以事件B发生的概率。</p>
+<h2 id="贝叶斯公式的示例"><a href="#贝叶斯公式的示例" class="headerlink" title="贝叶斯公式的示例"></a>贝叶斯公式的示例</h2><p>假设有一个袋子D1和D2，其中有红球和蓝球，已知袋D1中红球的比例为0.6，D2中红球的比例为0.4， 现在从袋中随机取出一个球，发现这个球是红球。那么这个球来自D1的概率是多少？</p>
+<p>根据贝叶斯公式，可以得到:</p>
+<pre class="line-numbers language-none"><code class="language-none">P(D1｜红球) &#x3D; P(红球｜D1) * P(D1) &#x2F; P(红球)
+&#x3D; 0.6 * 0.5 &#x2F; (0.6 * 0.5 + 0.4*0.5) 
+&#x3D; 0.3&#x2F;0.5
+&#x3D; 0.6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="贝叶斯公式在机器学习中的应用"><a href="#贝叶斯公式在机器学习中的应用" class="headerlink" title="贝叶斯公式在机器学习中的应用"></a>贝叶斯公式在机器学习中的应用</h2><p>贝叶斯公式在机器学习中有着广泛的应用，其中最著名的就是朴素贝叶斯分类器。朴素贝叶斯分类器是一种基于贝叶斯定理与特征之间独立假设的分类方法，主要用于文本分类和垃圾邮件过滤等任务。</p>
+<ul>
+<li>文本分类：文本分类是机器学习的一个重要应用，朴素贝叶斯分类器利用文本中的词频统计信息，将每个文本表示为一个词频向量，并根据贝叶斯公式计算文本属于不同类别的概率，最终将文本划分到概率最高的类别中。</li>
+<li>垃圾邮件过滤：垃圾邮件过滤是另一个常见的应用场景，朴素贝叶斯分类器可以通过学习正常邮件和垃圾邮件的特征，利用贝叶斯公式计算新邮件属于不同类别的概率，并将新邮件分类到相应的类别中。</li>
+</ul>
+<p>除了朴素贝叶斯分类器外，贝叶斯网络也是机器学习中常用的方法之一。贝叶斯网络是一种概率图模型，用于描述变量之间的依赖关系和条件独立关系。通过学习和推理贝叶斯网络，可以解决诸如分类、异常检测、推荐系统等任务。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>贝叶斯公式具有广泛的应用场景和坚实的理论基础，在机器学习和概率论领域中扮演着重要的角色。<br>正如《底层逻辑》一书中所说，数学中的三大逻辑—数学期望、大数定律和条件概率，以及条件概率推演出来的“神器”贝叶斯定理，能有效地指导创业与投资，使你走向成功。</p>
 
                 
             </div>
@@ -406,7 +419,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhangzedtv.github.io/2023/06/14/amazon-codewhisperer/">https://zhangzedtv.github.io/2023/06/14/amazon-codewhisperer/</a>
+                    <a href="https://zhangzedtv.github.io/2023/05/18/bayes/">https://zhangzedtv.github.io/2023/05/18/bayes/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -444,12 +457,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/AIGC/">
-                                    <span class="chip bg-color">AIGC</span>
-                                </a>
-                            
-                                <a href="/tags/tools/">
-                                    <span class="chip bg-color">tools</span>
+                                <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/">
+                                    <span class="chip bg-color">概率论</span>
                                 </a>
                             
                         </div>
@@ -766,13 +775,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/18/cnn/">
+                <a href="/2023/06/13/ai-ml/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="CNN 卷积神经网络概述">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="AI和机器学习综述">
                         
-                        <span class="card-title">CNN 卷积神经网络概述</span>
+                        <span class="card-title">AI和机器学习综述</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -783,7 +792,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
                         </span>
                         <span class="publish-author">
                             
@@ -807,13 +816,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/13/ai-ml/">
+                <a href="/2023/05/15/jhhs/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="AI和机器学习综述">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="激活函数 - Activation Function">
                         
-                        <span class="card-title">AI和机器学习综述</span>
+                        <span class="card-title">激活函数 - Activation Function</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -824,7 +833,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-15
                             </span>
                         <span class="publish-author">
                             
@@ -1032,7 +1041,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.5k</span>
+                        class="white-color">5.7k</span>
             
             
             
