@@ -4,14 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="均方根误差 RMSE(root mean square error), AI 机器学习 深度学习 Quant 量化 策略">
-    <meta name="description" content="MSE (mean square error) 均方差真实值和预测值的方差求平均:
-
-
-RMSE (root mean square error) 均方根误差MSE的平方根
-
-
-RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
+    <meta name="keywords" content="激活函数 - Activation Function, AI 机器学习 深度学习 Quant 量化 策略">
+    <meta name="description" content="激活函数就是在神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端。对于神经网络模型去学习、理解非常复杂和非线性的函数来说具有十分重要的作用。它们将非线性特性引入到我们的网络中。如下图，在神经元中，输入的 inputs 通过加权，求">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +17,7 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>均方根误差 RMSE(root mean square error) | ze的博客</title>
+    <title>激活函数 - Activation Function | ze的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -275,12 +269,12 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">均方根误差 RMSE(root mean square error)</h1>
+                    <h1 class="description center-align post-title">激活函数 - Activation Function</h1>
                 </div>
             </div>
         </div>
@@ -302,13 +296,9 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E4%BB%A3%E6%95%B0/">
-                                <span class="chip bg-color">代数</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -316,8 +306,8 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
-                                数学
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                机器学习
                             </a>
                         
                     </div>
@@ -329,7 +319,7 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-28
+                    2023-06-20
                 </div>
                 
 
@@ -338,14 +328,14 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    98
+                    732
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -368,13 +358,33 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="MSE-mean-square-error-均方差"><a href="#MSE-mean-square-error-均方差" class="headerlink" title="MSE (mean square error) 均方差"></a>MSE (mean square error) 均方差</h2><p>真实值和预测值的方差求平均:</p>
-<img src="/2023/06/28/rmse/RMSE-1.png" class="">
+                <p>激活函数就是在神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端。对于神经网络模型去学习、理解非常复杂和非线性的函数来说具有十分重要的作用。它们将非线性特性引入到我们的网络中。如下图，在神经元中，输入的 inputs 通过加权，求和后，还被作用了一个函数，这个函数就是激活函数。引入激活函数是为了增加神经网络模型的非线性。没有激活函数的每层都相当于矩阵相乘,是上一层的线性函数。就算你叠加了若干层之后，无非还是个矩阵相乘罢了,是最原始的感知机。</p>
+<img src="/2023/06/20/jhhs/jihuohanshu-1.webp" class="" title="图1">
 
-<h2 id="RMSE-root-mean-square-error-均方根误差"><a href="#RMSE-root-mean-square-error-均方根误差" class="headerlink" title="RMSE (root mean square error) 均方根误差"></a>RMSE (root mean square error) 均方根误差</h2><p>MSE的平方根</p>
-<img src="/2023/06/28/rmse/RMSE-2.png" class="">
 
-<p>RMSE 与标准差计算公式类似, 区别如下:<br>标准差是用来衡量一组数据自身的离散程度, 数据的每个元素与平均值的偏差.<br>RMSE 用来衡量预测值和真实值的偏差.</p>
+
+<p>以下是一些常用的激活函数及其特性。选择哪种激活函数取决于你正在解决的具体问题和你正在使用的神经网络架构。</p>
+<h2 id="1-Sigmoid函数"><a href="#1-Sigmoid函数" class="headerlink" title="1. Sigmoid函数"></a>1. Sigmoid函数</h2><p>Sigmoid 函数是一种常用的激活函数，主要用于二分类问题。它可以将任何值都映射到一个位于(0,1)之间的值， 常被用作神经网络的阈值函数。因此，它非常适合表示概率。Sigmoid 函数的公式为：</p>
+<p>$$f(x) &#x3D; \frac{1}{1 + e^{-x}}$$</p>
+<p>然而，Sigmoid 函数在输入值非常大或非常小的时候会出现梯度消失的问题，这会导致在这些区域内神经网络的学习速度变得非常慢。</p>
+<p>函数图像如下：</p>
+<img src="/2023/06/20/jhhs/jihuohanshu-3.jpg" class="">
+
+<h2 id="2-Tanh函数"><a href="#2-Tanh函数" class="headerlink" title="2. Tanh函数"></a>2. Tanh函数</h2><p>Tanh（双曲正切）函数是由基本双曲函数双曲正弦和双曲余弦推导而来， 与Sigmoid函数类似，但它将输入值映射到-1到1之间，而不是0到1之间。这意味着Tanh函数的输出是零中心化的，这在某些情况下可能是一个优点。Tanh函数的公式为：</p>
+<p>$$f(x) &#x3D; \frac{e^x - e^{-x}}{e^x + e^{-x}}$$</p>
+<p>和Sigmoid函数一样，Tanh函数在输入值非常大或非常小的时候也会出现梯度消失的问题。</p>
+<p>函数图像如下</p>
+<img src="/2023/06/20/jhhs/jihuohanshu-5.jpg" class="">
+
+<h2 id="3-ReLU函数"><a href="#3-ReLU函数" class="headerlink" title="3. ReLU函数"></a>3. ReLU函数</h2><p>ReLU（Rectified Linear Unit）函数是最常用的激活函数之一， 用于隐层神经元输出。当输入值小于0时，ReLU函数的输出为0；当输入值大于0时，ReLU函数的输出等于输入值。ReLU函数的公式为：</p>
+<p>$$f(x) &#x3D; max(0, x)$$</p>
+<p>ReLU函数在处理正数时不会出现梯度消失的问题，因此在实践中常常被优先选择。</p>
+<p>函数图像如下:</p>
+<img src="/2023/06/20/jhhs/jihuohanshu-7.jpg" class="">
+
+<h2 id="4-Softmax-函数"><a href="#4-Softmax-函数" class="headerlink" title="4. Softmax 函数"></a>4. Softmax 函数</h2><p>Softmax函数通常用于多分类问题中。它可以将一组输入值转化为一组表示概率分布的输出值。Softmax函数的公式为：</p>
+<p>$$f(x_i) &#x3D; \frac{e^{x_i}}{\sum_{j}e^{x_j}}$$</p>
+<p>其中$x_i$表示输入向量中的第i个元素。</p>
 
                 
             </div>
@@ -401,7 +411,7 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhangzedtv.github.io/2023/06/28/rmse/">https://zhangzedtv.github.io/2023/06/28/rmse/</a>
+                    <a href="https://zhangzedtv.github.io/2023/06/20/jhhs/">https://zhangzedtv.github.io/2023/06/20/jhhs/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -438,11 +448,7 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E4%BB%A3%E6%95%B0/">
-                                    <span class="chip bg-color">代数</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -753,10 +759,9 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2023/06/28/rmse/">
                     <div class="card-image">
@@ -774,9 +779,9 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -789,7 +794,6 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -808,13 +812,13 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/20/jhhs/">
+                <a href="/2023/06/18/cnn/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="激活函数 - Activation Function">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="CNN 卷积神经网络概述">
                         
-                        <span class="card-title">激活函数 - Activation Function</span>
+                        <span class="card-title">CNN 卷积神经网络概述</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -825,7 +829,7 @@ RMSE 与标准差计算公式类似, 区别如下:标准差是用来衡量一">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-18
                             </span>
                         <span class="publish-author">
                             
