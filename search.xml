@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>一种基于机器学习模型DeepAR的量化策略</title>
+      <link href="/2023/07/21/deepar/"/>
+      <url>/2023/07/21/deepar/</url>
+      
+        <content type="html"><![CDATA[<p>目前国内百亿规模的量化私募基金已经超过 100 只, 并且很多都在积极的从传统的量化策略转向机器学习模型预测生成的策略。<br>本文介绍基于机器学习算法DeepAR， 在亚马逊的机器学习平台Sagemaker上进行训练生成的策略及其历史回测效果。</p><h2 id="时间序列数据预测模型-–-DeepAR"><a href="#时间序列数据预测模型-–-DeepAR" class="headerlink" title="时间序列数据预测模型 – DeepAR:"></a>时间序列数据预测模型 – DeepAR:</h2><p>亚马逊提供了一种使用循环神经网络（RNN）预测时间序列数据的深度学习算法。传统的预测方法，如自回归综合移动平均（ARIMA）或指数平滑（ETS）算法将单个模型拟合到每个单独的时间序列。然后使用该模型对此时间序列进行预测。<br>然而，在许多应用程序中有许多类似的时间序列。例如，我们可能有时间序列分组: 针对多个不同产品的需求, 多个服务器负载, 多个网页访问量。对于这种类型的应用程序，可以在所有时间序列上联合训练单个模型。DeepAR采用了这种方法,当数据集包含数百个相关的时间序列时，DeepAR的性能优于标准ARIMA和ETS方法。我们还可以使用经过训练的模型为类似的新的时间序列生成预测。<br>本文不会详细介绍DeepAR算法，请参考论文：</p><p><code>https://arxiv.org/pdf/1704.04110.pdf</code></p><p>GluonTS 也是一个比较常用的时间序列预测模型：<br><code>https://ts.gluon.ai/stable/getting_started/background.html</code></p><p>我会用相同的数据去训练GluonTS模型 ，和DeepAR进行对比测试。</p><h2 id="训练数据预处理"><a href="#训练数据预处理" class="headerlink" title="训练数据预处理"></a>训练数据预处理</h2><ul><li><p>金融数据获取<br>  我们可以通过多种途径获取金融数据，业内的许多公司会购买Wind、恒生聚源等数据提供商的数据库，若尚未入行，则也可以通过非常多的第三方策略平台获取免费数据，例如优矿、聚宽、米筐等。</p><p>  <code> https://tushare.pro/</code></p><p>  Tushare是一个免费、开源的python财经数据接口包，不带任何商业性质和目的。数据内容包含股票、基金、期货、债券、外汇、行业大数据等，同时包括了数字货币行情等区块链数据的全数据品类的金融大数据平台，为各类金融投资和研究人员提供适用的数据和工具。</p></li><li><p>数据预处理: 为了让模型更具有普适性, 需要对训练数据进行处理: 标准化处理, 中性化处理, 缺失值处理, 归一化等</p></li></ul><p>未完待续。。。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 量化交易 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>均方根误差 RMSE(root mean square error)</title>
       <link href="/2023/06/28/rmse/"/>
       <url>/2023/06/28/rmse/</url>
@@ -67,25 +92,6 @@
     
     
     <entry>
-      <title>RNN-Recurrent Neural Network</title>
-      <link href="/2023/06/15/rnn/"/>
-      <url>/2023/06/15/rnn/</url>
-      
-        <content type="html"><![CDATA[<p>RNN是一种特殊的神经网络结构, 它是根据”人的认知是基于过往的经验和记忆”这一观点提出的. 它与DNN,CNN不同的是: 它不仅考虑当前时刻的输入,而且赋予了网络对前面的内容的一种’记忆’功能.</p><p>RNN之所以称为循环神经网路，即一个序列当前的输出与前面的输出也有关。具体的表现形式为网络会对前面的信息进行记忆并应用于当前输出的计算中，即隐藏层之间的节点不再无连接而是有连接的，并且隐藏层的输入不仅包括输入层的输出还包括上一时刻隐藏层的输出。</p><h2 id="RNN的应用领域"><a href="#RNN的应用领域" class="headerlink" title="RNN的应用领域:"></a>RNN的应用领域:</h2><p>只要考虑时间先后顺序的问题都可以使用RNN来解决.这里主要说一下几个常见的应用领域</p><ul><li><p>自然语言处理(NLP): 主要有视频处理, 文本生成, 语言模型, 图像处理</p></li><li><p>机器翻译, 机器写文章</p></li><li><p>语音识别</p></li><li><p>图像描述生成</p></li><li><p>文本相似度计算</p></li><li><p>推荐系统。例如：音乐推荐、网易考拉商品推荐、Youtube视频推荐等新的应用领域。</p></li></ul><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>如下图所示, 我们可以看到RNN层级结构较之于CNN来说比较简单, 它主要有输入层,Hidden Layer, 输出层组成.</p><p>并且会发现在Hidden Layer 有一个箭头表示数据的循环更新, 这个就是实现时间记忆功能的方法.</p><img src="/2023/06/15/rnn/RNN-1.png" class=""><p>t-1, t, t+1表示时间序列. X表示输入的样本. St表示样本在时间t处的的记忆 <code>St = f(W*St-1 +U*Xt)</code> W表示输入的权重, U表示此刻输入的样本的权重, V表示输出的样本权重. 在t &#x3D;1时刻, 一般初始化输入S0&#x3D;0, 随机初始化W,U,V, 进行下面的公式计算:</p><img src="/2023/06/15/rnn/RNN-2.png" class=""><p>其中,f和g均为激活函数. 其中f可以是tanh,relu,sigmoid等激活函数，g通常是softmax也可以是其他。 时间就向前推进，此时的状态s1作为时刻1的记忆状态将参与下一个时刻的预测活动，也就是:</p><img src="/2023/06/15/rnn/RNN-3.png" class=""><p>以此类推, 可以得到最终的输出值为:</p><img src="/2023/06/15/rnn/RNN-4.png" class=""><h1 id="RNN-的缺陷及改进算法"><a href="#RNN-的缺陷及改进算法" class="headerlink" title="RNN 的缺陷及改进算法"></a>RNN 的缺陷及改进算法</h1><p>RNN 处理时间序列的问题的效果很好, 但是仍然存在着一些问题, 其中较为严重的是容易出现梯度消失或者梯度爆炸的问题, 梯度消失主要指由于时间过长而造成记忆值较小的现象.</p><p>为了缓解传递间的梯度和遗忘问题，设计了各种各样的 RNN cell，最著名的两个就是LSTM和GRU.</p><p>对于梯度消失: 由于它们都有特殊的方式存储”记忆”，那么以前梯度比较大的”记忆”不会像简单的RNN一样马上被抹除，因此可以一定程度上克服梯度消失问题。</p><p>对于梯度爆炸: gradient clipping，就是当你计算的梯度超过阈值c或者小于阈值-c的时候，便把此时的梯度设置成c或-c。 </p><p>LSTM (Long Short Term Memory): </p><img src="/2023/06/15/rnn/LSTM.png" class=""><p>GRU (Gated Recurrent Unit) : </p><img src="/2023/06/15/rnn/GRU.png" class=""><h2 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h2><p>ransformer 是Google Brain 2017的提出的一篇论文，它针对RNN的弱点进行重新设计，解决了RNN效率问题和传递中的缺陷等，在很多问题上都超过了RNN的表现。Transfromer的基本结构如下图所示，它是一个N进N出的结构，也就是说每个Transformer单元相当于一层的RNN层，接收一整个句子所有词作为输入，然后为句子中的每个词都做出一个输出。但是与RNN不同的是，Transformer能够同时处理句子中的所有词，并且任意两个词之间的操作距离都是1，这么一来就很好地解决了上面提到的RNN的效率问题和距离问题。</p><img src="/2023/06/15/rnn/transformer.png" class=""><p>参考 :</p><ol><li><a href="https://zhuanlan.zhihu.com/p/69290203">https://zhuanlan.zhihu.com/p/69290203</a></li><li><a href="https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517">https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517</a></li><li><a href="https://blog.csdn.net/qq_39521554/article/details/80083592">https://blog.csdn.net/qq_39521554/article/details/80083592</a></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 机器学习 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>AI和机器学习综述</title>
       <link href="/2023/06/13/ai-ml/"/>
       <url>/2023/06/13/ai-ml/</url>
@@ -124,6 +130,44 @@
             <tag> 概率论 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Amazon SageMaker</title>
+      <link href="/2023/05/17/amazon-sagemaker/"/>
+      <url>/2023/05/17/amazon-sagemaker/</url>
+      
+        <content type="html"><![CDATA[<p>这篇文章旨在给大家推荐一个很好用的机器学习平台，或者说机器学习的集成开发环境：Amazon SageMaker。单纯就是因为它真的很方便实用，它集成了数据预处理接口以及常用的机器学习库（PyTorch、TensorFlow、MXNet、Chainer、Gluon、Keras、Scikit-learn等）和预训练的开源大模型（ Llama-2， Falcon， Stable Diffusion等），可供我们很方便的调用，大大缩短了开发时间。训练好的模型还可以直接部署到AWS上。<br>我会在后面的文章中给出用Sagemaker训练部署机器学习模型的例子。</p><h2 id="Amazon-SageMaker-简介"><a href="#Amazon-SageMaker-简介" class="headerlink" title="Amazon SageMaker 简介"></a>Amazon SageMaker 简介</h2><p>Amazon SageMaker 是一项完全托管的机器学习服务。借助 SageMaker 开发人员可以快速、轻松地构建和训练机器学习模型，然后直接将模型部署到生产环境中。它提供了一个集成的 Jupyter Notebook 实例，可以轻松访问各种数据源进行分析处理，无需我们自己去管理服务器。<br>SageMaker提供了常见的机器学习算法，并且这些算法经过了优化，可以在分布式环境中高效处理大数据。</p><h2 id="Sagemaker-集成开发环境"><a href="#Sagemaker-集成开发环境" class="headerlink" title="Sagemaker 集成开发环境"></a>Sagemaker 集成开发环境</h2><p>SageMaker有几个集成开发环境：Sagemaker Studio，Sagemaker Studio Lab, Sagemaker RStudio, SageMaker Canvas.</p><p>如果你是一个机器学习的小白，你可以用 SageMaker Autopilot。只需要提供原始数据和任务描述，就可以自动完成所有task，包括根据任务类型自动选取合适的机器学习算法。</p><p>最常用的就是Sagemaker Studio， 下面介绍其使用过程。</p><h2 id="Sagemaker-Studio-的使用过程"><a href="#Sagemaker-Studio-的使用过程" class="headerlink" title="Sagemaker Studio 的使用过程"></a>Sagemaker Studio 的使用过程</h2><p>Sagemaker Studio就是一个网页版的机器学习的IDE， 可以很方便的 build, train, debug, deploy, and monitor你的机器学习模型。<br>使用之前需要注册一个Amaozn AWS账号，然后申请一个Domain： <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html">https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html</a></p><p>从零开始完成一个机器学习应用的任务主要分为4个步骤： 数据预处理，模型构建，训练和微调，模型部署和管理，监测。SageMaker 提供一个notebook instance来跑Jupyter Notebook。上面这些步骤都是跑在notebook里的python代码， 修改调试都很方便。</p><ol><li>数据预处理<br>在训练ML模型之前，我们通常需要对采集的数据进行分析和处理</li></ol><ul><li><p>Data Wrangler : 是专门为ML准备的数据预处理模块，内置了300多个数据转换接口，让我们很方便的集成和处理（选取，清洗，正则化，归一化，缺失值处理等）原始数据然后接入到我们的ML模型去训练。参考： <a href="https://aws.amazon.com/sagemaker/data-wrangler/">https://aws.amazon.com/sagemaker/data-wrangler/</a></p><p>  <img src="/./Amazon-SageMaker/sage-1.png"></p></li></ul><ol start="2"><li><p>训练测试调参<br>要训练ML模型你要构建自己的机器学习算法或者使用已有的基础模型。SageMaker提供内置的机器学习算法和预训练的模型， 我们需要根据自己要解决的问题去选择一个合适的算法， 这一点很关键，选择往往大于努力。</p><p> <img src="/./Amazon-SageMaker/sagemaker-2.png"></p><p> 完成模型的训练以后，需要用测试数据集对模型的预测结果进行评价，看预测结果的精度是否符合预期。如果不符合， 需要去调参。</p></li><li><p>部署模型<br>当你完成模型训练和微调之后，你可以把模型的artifact存放到S3，然后用SageMaker Inference进行部署。</p><p> <img src="/./Amazon-SageMaker/sage-3.png"></p><ul><li>在SageMaker Inference设置好你训练完的model 及 生成的Docker image</li><li>设置inference选项： Real-Time &#x2F; Asynchronous &#x2F; Serverless &#x2F; Batch Transform，这里需要根据自己产品的实际需求去选择，比如你是一个股票价格预测模型，需要根据分时数据进行预测并做决策，那就要设置成Real-Time</li><li>根据实际需求选择运行model的实例类型及个数</li><li>创建 Inference endpoint实例</li><li>激活实例并接收预测结果数据</li></ul></li><li><p>监测<br>模型部署完以后，就会自动生成一个metrics dashboard， 我们可以监测模型的健康状况，比如 Invocation error，lantency，CPU&#x2F;Memery usage等<br>同时我们可以监测模型的预测质量，比如准确率，漂移等。 还可以和实际（ground truth）数据进行对比。并且用最新收集的实际数据继续训练模型，形成一个自动优化的闭环。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>RNN-Recurrent Neural Network</title>
+      <link href="/2023/05/15/rnn/"/>
+      <url>/2023/05/15/rnn/</url>
+      
+        <content type="html"><![CDATA[<p>RNN是一种特殊的神经网络结构, 它是根据”人的认知是基于过往的经验和记忆”这一观点提出的. 它与DNN,CNN不同的是: 它不仅考虑当前时刻的输入,而且赋予了网络对前面的内容的一种’记忆’功能.</p><p>RNN之所以称为循环神经网路，即一个序列当前的输出与前面的输出也有关。具体的表现形式为网络会对前面的信息进行记忆并应用于当前输出的计算中，即隐藏层之间的节点不再无连接而是有连接的，并且隐藏层的输入不仅包括输入层的输出还包括上一时刻隐藏层的输出。</p><h2 id="RNN的应用领域"><a href="#RNN的应用领域" class="headerlink" title="RNN的应用领域:"></a>RNN的应用领域:</h2><p>只要考虑时间先后顺序的问题都可以使用RNN来解决.这里主要说一下几个常见的应用领域</p><ul><li><p>自然语言处理(NLP): 主要有视频处理, 文本生成, 语言模型, 图像处理</p></li><li><p>机器翻译, 机器写文章</p></li><li><p>语音识别</p></li><li><p>图像描述生成</p></li><li><p>文本相似度计算</p></li><li><p>推荐系统。例如：音乐推荐、网易考拉商品推荐、Youtube视频推荐等新的应用领域。</p></li></ul><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>如下图所示, 我们可以看到RNN层级结构较之于CNN来说比较简单, 它主要有输入层,Hidden Layer, 输出层组成.</p><p>并且会发现在Hidden Layer 有一个箭头表示数据的循环更新, 这个就是实现时间记忆功能的方法.</p><img src="/2023/05/15/rnn/RNN-1.png" class=""><p>t-1, t, t+1表示时间序列. X表示输入的样本. St表示样本在时间t处的的记忆 <code>St = f(W*St-1 +U*Xt)</code> W表示输入的权重, U表示此刻输入的样本的权重, V表示输出的样本权重. 在t &#x3D;1时刻, 一般初始化输入S0&#x3D;0, 随机初始化W,U,V, 进行下面的公式计算:</p><img src="/2023/05/15/rnn/RNN-2.png" class=""><p>其中,f和g均为激活函数. 其中f可以是tanh,relu,sigmoid等激活函数，g通常是softmax也可以是其他。 时间就向前推进，此时的状态s1作为时刻1的记忆状态将参与下一个时刻的预测活动，也就是:</p><img src="/2023/05/15/rnn/RNN-3.png" class=""><p>以此类推, 可以得到最终的输出值为:</p><img src="/2023/05/15/rnn/RNN-4.png" class=""><h1 id="RNN-的缺陷及改进算法"><a href="#RNN-的缺陷及改进算法" class="headerlink" title="RNN 的缺陷及改进算法"></a>RNN 的缺陷及改进算法</h1><p>RNN 处理时间序列的问题的效果很好, 但是仍然存在着一些问题, 其中较为严重的是容易出现梯度消失或者梯度爆炸的问题, 梯度消失主要指由于时间过长而造成记忆值较小的现象.</p><p>为了缓解传递间的梯度和遗忘问题，设计了各种各样的 RNN cell，最著名的两个就是LSTM和GRU.</p><p>对于梯度消失: 由于它们都有特殊的方式存储”记忆”，那么以前梯度比较大的”记忆”不会像简单的RNN一样马上被抹除，因此可以一定程度上克服梯度消失问题。</p><p>对于梯度爆炸: gradient clipping，就是当你计算的梯度超过阈值c或者小于阈值-c的时候，便把此时的梯度设置成c或-c。 </p><p>LSTM (Long Short Term Memory): </p><img src="/2023/05/15/rnn/LSTM.png" class=""><p>GRU (Gated Recurrent Unit) : </p><img src="/2023/05/15/rnn/GRU.png" class=""><h2 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h2><p>ransformer 是Google Brain 2017的提出的一篇论文，它针对RNN的弱点进行重新设计，解决了RNN效率问题和传递中的缺陷等，在很多问题上都超过了RNN的表现。Transfromer的基本结构如下图所示，它是一个N进N出的结构，也就是说每个Transformer单元相当于一层的RNN层，接收一整个句子所有词作为输入，然后为句子中的每个词都做出一个输出。但是与RNN不同的是，Transformer能够同时处理句子中的所有词，并且任意两个词之间的操作距离都是1，这么一来就很好地解决了上面提到的RNN的效率问题和距离问题。</p><img src="/2023/05/15/rnn/transformer.png" class=""><p>参考 :</p><ol><li><a href="https://zhuanlan.zhihu.com/p/69290203">https://zhuanlan.zhihu.com/p/69290203</a></li><li><a href="https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517">https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517</a></li><li><a href="https://blog.csdn.net/qq_39521554/article/details/80083592">https://blog.csdn.net/qq_39521554/article/details/80083592</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
       
     </entry>
     

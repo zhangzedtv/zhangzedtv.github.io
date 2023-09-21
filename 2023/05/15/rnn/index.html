@@ -320,7 +320,7 @@ RNN之所以称为循环神经网路，即一个序列当">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-15
+                    2023-05-15
                 </div>
                 
 
@@ -378,29 +378,29 @@ RNN之所以称为循环神经网路，即一个序列当">
 </ul>
 <h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>如下图所示, 我们可以看到RNN层级结构较之于CNN来说比较简单, 它主要有输入层,Hidden Layer, 输出层组成.</p>
 <p>并且会发现在Hidden Layer 有一个箭头表示数据的循环更新, 这个就是实现时间记忆功能的方法.</p>
-<img src="/2023/06/15/rnn/RNN-1.png" class="">
+<img src="/2023/05/15/rnn/RNN-1.png" class="">
 
 <p>t-1, t, t+1表示时间序列. X表示输入的样本. St表示样本在时间t处的的记忆 <code>St = f(W*St-1 +U*Xt)</code> W表示输入的权重, U表示此刻输入的样本的权重, V表示输出的样本权重. 在t &#x3D;1时刻, 一般初始化输入S0&#x3D;0, 随机初始化W,U,V, 进行下面的公式计算:</p>
-<img src="/2023/06/15/rnn/RNN-2.png" class="">
+<img src="/2023/05/15/rnn/RNN-2.png" class="">
 
 <p>其中,f和g均为激活函数. 其中f可以是tanh,relu,sigmoid等激活函数，g通常是softmax也可以是其他。 时间就向前推进，此时的状态s1作为时刻1的记忆状态将参与下一个时刻的预测活动，也就是:</p>
-<img src="/2023/06/15/rnn/RNN-3.png" class="">
+<img src="/2023/05/15/rnn/RNN-3.png" class="">
 
 <p>以此类推, 可以得到最终的输出值为:</p>
-<img src="/2023/06/15/rnn/RNN-4.png" class="">
+<img src="/2023/05/15/rnn/RNN-4.png" class="">
 
 <h1 id="RNN-的缺陷及改进算法"><a href="#RNN-的缺陷及改进算法" class="headerlink" title="RNN 的缺陷及改进算法"></a>RNN 的缺陷及改进算法</h1><p>RNN 处理时间序列的问题的效果很好, 但是仍然存在着一些问题, 其中较为严重的是容易出现梯度消失或者梯度爆炸的问题, 梯度消失主要指由于时间过长而造成记忆值较小的现象.</p>
 <p>为了缓解传递间的梯度和遗忘问题，设计了各种各样的 RNN cell，最著名的两个就是LSTM和GRU.</p>
 <p>对于梯度消失: 由于它们都有特殊的方式存储”记忆”，那么以前梯度比较大的”记忆”不会像简单的RNN一样马上被抹除，因此可以一定程度上克服梯度消失问题。</p>
 <p>对于梯度爆炸: gradient clipping，就是当你计算的梯度超过阈值c或者小于阈值-c的时候，便把此时的梯度设置成c或-c。 </p>
 <p>LSTM (Long Short Term Memory): </p>
-<img src="/2023/06/15/rnn/LSTM.png" class="">
+<img src="/2023/05/15/rnn/LSTM.png" class="">
 
 <p>GRU (Gated Recurrent Unit) : </p>
-<img src="/2023/06/15/rnn/GRU.png" class="">
+<img src="/2023/05/15/rnn/GRU.png" class="">
 
 <h2 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h2><p>ransformer 是Google Brain 2017的提出的一篇论文，它针对RNN的弱点进行重新设计，解决了RNN效率问题和传递中的缺陷等，在很多问题上都超过了RNN的表现。Transfromer的基本结构如下图所示，它是一个N进N出的结构，也就是说每个Transformer单元相当于一层的RNN层，接收一整个句子所有词作为输入，然后为句子中的每个词都做出一个输出。但是与RNN不同的是，Transformer能够同时处理句子中的所有词，并且任意两个词之间的操作距离都是1，这么一来就很好地解决了上面提到的RNN的效率问题和距离问题。</p>
-<img src="/2023/06/15/rnn/transformer.png" class="">
+<img src="/2023/05/15/rnn/transformer.png" class="">
 
 
 <p>参考 :</p>
@@ -435,7 +435,7 @@ RNN之所以称为循环神经网路，即一个序列当">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhangzedtv.github.io/2023/06/15/rnn/">https://zhangzedtv.github.io/2023/06/15/rnn/</a>
+                    <a href="https://zhangzedtv.github.io/2023/05/15/rnn/">https://zhangzedtv.github.io/2023/05/15/rnn/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -787,13 +787,13 @@ RNN之所以称为循环神经网路，即一个序列当">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/18/cnn/">
+                <a href="/2023/05/17/amazon-sagemaker/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="CNN 卷积神经网络概述">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Amazon SageMaker">
                         
-                        <span class="card-title">CNN 卷积神经网络概述</span>
+                        <span class="card-title">Amazon SageMaker</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -804,7 +804,7 @@ RNN之所以称为循环神经网路，即一个序列当">
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-17
                         </span>
                         <span class="publish-author">
                             
@@ -825,16 +825,16 @@ RNN之所以称为循环神经网路，即一个序列当">
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/13/ai-ml/">
+                <a href="/2023/05/15/rnn/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="AI和机器学习综述">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="RNN-Recurrent Neural Network">
                         
-                        <span class="card-title">AI和机器学习综述</span>
+                        <span class="card-title">RNN-Recurrent Neural Network</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -845,7 +845,7 @@ RNN之所以称为循环神经网路，即一个序列当">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-15
                             </span>
                         <span class="publish-author">
                             
@@ -859,6 +859,7 @@ RNN之所以称为循环神经网路，即一个序列当">
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -1053,7 +1054,7 @@ RNN之所以称为循环神经网路，即一个序列当">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">7.1k</span>
+                        class="white-color">8.8k</span>
             
             
             
