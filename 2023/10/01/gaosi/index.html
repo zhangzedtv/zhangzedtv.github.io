@@ -4,9 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="循环神经网络-RNN（Recurrent Neural Network）, AI 机器学习 深度学习 Quant 量化 策略">
-    <meta name="description" content="RNN是一种特殊的神经网络结构, 它是根据”人的认知是基于过往的经验和记忆”这一观点提出的. 它与DNN,CNN不同的是: 它不仅考虑当前时刻的输入,而且赋予了网络对前面的内容的一种’记忆’功能.
-RNN之所以称为循环神经网路，即一个序列当">
+    <meta name="keywords" content="高斯分布与机器学习, AI 机器学习 深度学习 Quant 量化 策略">
+    <meta name="description" content="正态分布，也被称为高斯分布，是一种常见的连续概率分布。它的图形形状为钟形曲线，是一种非常重要且广泛使用的概率分布。
+正态分布的数学表达式正态分布的概率密度公式为：
+$$f(x) &amp;#x3D; \frac{1}{\sigma\sqrt{2\p">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +19,7 @@ RNN之所以称为循环神经网路，即一个序列当">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>循环神经网络-RNN（Recurrent Neural Network） | ze的博客</title>
+    <title>高斯分布与机器学习 | ze的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -270,12 +271,12 @@ RNN之所以称为循环神经网路，即一个序列当">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">循环神经网络-RNN（Recurrent Neural Network）</h1>
+                    <h1 class="description center-align post-title">高斯分布与机器学习</h1>
                 </div>
             </div>
         </div>
@@ -297,9 +298,13 @@ RNN之所以称为循环神经网路，即一个序列当">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%A6%82%E7%8E%87/">
+                                <span class="chip bg-color">概率</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -307,8 +312,8 @@ RNN之所以称为循环神经网路，即一个序列当">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                机器学习
+                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
+                                数学
                             </a>
                         
                     </div>
@@ -320,7 +325,7 @@ RNN之所以称为循环神经网路，即一个序列当">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-05-15
+                    2023-10-01
                 </div>
                 
 
@@ -329,14 +334,14 @@ RNN之所以称为循环神经网路，即一个序列当">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    730
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    2 分
                 </div>
                 
 
@@ -359,56 +364,55 @@ RNN之所以称为循环神经网路，即一个序列当">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>RNN是一种特殊的神经网络结构, 它是根据”人的认知是基于过往的经验和记忆”这一观点提出的. 它与DNN,CNN不同的是: 它不仅考虑当前时刻的输入,而且赋予了网络对前面的内容的一种’记忆’功能.</p>
-<p>RNN之所以称为循环神经网路，即一个序列当前的输出与前面的输出也有关。具体的表现形式为网络会对前面的信息进行记忆并应用于当前输出的计算中，即隐藏层之间的节点不再无连接而是有连接的，并且隐藏层的输入不仅包括输入层的输出还包括上一时刻隐藏层的输出。</p>
-<h2 id="RNN的应用领域"><a href="#RNN的应用领域" class="headerlink" title="RNN的应用领域:"></a>RNN的应用领域:</h2><p>只要考虑时间先后顺序的问题都可以使用RNN来解决.这里主要说一下几个常见的应用领域</p>
+                <p>正态分布，也被称为高斯分布，是一种常见的连续概率分布。它的图形形状为钟形曲线，是一种非常重要且广泛使用的概率分布。</p>
+<h2 id="正态分布的数学表达式"><a href="#正态分布的数学表达式" class="headerlink" title="正态分布的数学表达式"></a>正态分布的数学表达式</h2><p>正态分布的概率密度公式为：</p>
+<p>$$<br>f(x) &#x3D; \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{(x-\mu)^2}{2\sigma^2} }<br>$$</p>
+<p>其中，$\mu$ 是均值，$\sigma$ 是标准差。这个函数描述了在给定均值和标准差的情况下，一个随机变量取某个值的概率。</p>
 <ul>
-<li><p>自然语言处理(NLP): 主要有视频处理, 文本生成, 语言模型, 图像处理</p>
-</li>
-<li><p>机器翻译, 机器写文章</p>
-</li>
-<li><p>语音识别</p>
-</li>
-<li><p>图像描述生成</p>
-</li>
-<li><p>文本相似度计算</p>
-</li>
-<li><p>推荐系统。例如：音乐推荐、网易考拉商品推荐、Youtube视频推荐等新的应用领域。</p>
-</li>
+<li>大约68%的数据位于均值的一个标准差范围内</li>
+<li>大约95%的数据位于两个标准差范围内</li>
+<li>大约99.7%的数据位于三个标准差范围内</li>
 </ul>
-<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>如下图所示, 我们可以看到RNN层级结构较之于CNN来说比较简单, 它主要有输入层,Hidden Layer, 输出层组成.</p>
-<p>并且会发现在Hidden Layer 有一个箭头表示数据的循环更新, 这个就是实现时间记忆功能的方法.</p>
-<img src="/2023/05/15/rnn/RNN-1.png" class="">
+<h2 id="如何用python生成标准正态分布数据"><a href="#如何用python生成标准正态分布数据" class="headerlink" title="如何用python生成标准正态分布数据"></a>如何用python生成标准正态分布数据</h2><p>numpy中有一个random模块，它包含了生成随机数的各种方法。其中一个方法就是random.randn，它可以返回一个或多个服从标准正态分布（均值为0，方差为1）的随机数。这在很多领域都有应用，比如统计学、机器学习、信号处理等。</p>
+<p>random.randn函数的语法如下：</p>
+<p><code>numpy.random.randn(d0, d1, ..., dn)</code></p>
+<p>其中，d0, d1, …, dn是可选的整数参数，表示返回数组的维度。如果没有提供任何参数，那么函数会返回一个单独的Python浮点数。如果提供了多个参数，那么函数会返回一个形状为(d0, d1, …, dn)的数组，数组中的元素都是从标准正态分布中随机采样的浮点数。</p>
+<p>一维标准正态分布数组示例： </p>
+<pre class="line-numbers language-none"><code class="language-none">&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; np.random.randn(5)
+array([-0.51733692,  0.48813676, -0.88147002,  1.12901958,  0.68026197])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>二维标准正态分布数组，包含3行4列的随机数：</p>
+<pre class="line-numbers language-none"><code class="language-none">&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; np.random.randn(3, 4)
+array([[ 1.33262386, -0.88922967, -0.07056098,  0.27340112],
+       [ 1.00664965, -0.68443807,  0.43801295, -0.35874714],
+       [-0.19289416, -0.42746963, -1.80435223,  0.02751727]])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="random-randn-函数应用"><a href="#random-randn-函数应用" class="headerlink" title="random.randn 函数应用"></a>random.randn 函数应用</h2><p>假设我们有一只股票，其初始价格为100元，每天的价格变化服从均值为0，标准差为2的正态分布。<br>想要模拟这只股票在100天内的价格走势, 代码如下：</p>
+<pre class="line-numbers language-none"><code class="language-none"># 导入numpy和matplotlib库
+import numpy as np
+import matplotlib.pyplot as plt
 
-<p>t-1, t, t+1表示时间序列. X表示输入的样本. St表示样本在时间t处的的记忆 <code>St = f(W*St-1 +U*Xt)</code> W表示输入的权重, U表示此刻输入的样本的权重, V表示输出的样本权重. 在t &#x3D;1时刻, 一般初始化输入S0&#x3D;0, 随机初始化W,U,V, 进行下面的公式计算:</p>
-<img src="/2023/05/15/rnn/RNN-2.png" class="">
+# 设置初始价格和天数
+initial_price &#x3D; 100
+days &#x3D; 100
 
-<p>其中,f和g均为激活函数. 其中f可以是tanh,relu,sigmoid等激活函数，g通常是softmax也可以是其他。 时间就向前推进，此时的状态s1作为时刻1的记忆状态将参与下一个时刻的预测活动，也就是:</p>
-<img src="/2023/05/15/rnn/RNN-3.png" class="">
+# 生成服从标准正态分布的随机数
+random_numbers &#x3D; np.random.randn(days)
 
-<p>以此类推, 可以得到最终的输出值为:</p>
-<img src="/2023/05/15/rnn/RNN-4.png" class="">
+# 计算每天的股票价格
+stock_prices &#x3D; initial_price + 2 * random_numbers
 
-<h1 id="RNN-的缺陷及改进算法"><a href="#RNN-的缺陷及改进算法" class="headerlink" title="RNN 的缺陷及改进算法"></a>RNN 的缺陷及改进算法</h1><p>RNN 处理时间序列的问题的效果很好, 但是仍然存在着一些问题, 其中较为严重的是容易出现梯度消失或者梯度爆炸的问题, 梯度消失主要指由于时间过长而造成记忆值较小的现象.</p>
-<p>为了缓解传递间的梯度和遗忘问题，设计了各种各样的 RNN cell，最著名的两个就是LSTM和GRU.</p>
-<p>对于梯度消失: 由于它们都有特殊的方式存储”记忆”，那么以前梯度比较大的”记忆”不会像简单的RNN一样马上被抹除，因此可以一定程度上克服梯度消失问题。</p>
-<p>对于梯度爆炸: gradient clipping，就是当你计算的梯度超过阈值c或者小于阈值-c的时候，便把此时的梯度设置成c或-c。 </p>
-<p>LSTM (Long Short Term Memory): </p>
-<img src="/2023/05/15/rnn/LSTM.png" class="">
+# 绘制股票价格走势图
+plt.plot(stock_prices)
+plt.xlabel(&#39;Day&#39;)
+plt.ylabel(&#39;Price&#39;)
+plt.title(&#39;Stock Price Simulation&#39;)
+plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>GRU (Gated Recurrent Unit) : </p>
-<img src="/2023/05/15/rnn/GRU.png" class="">
-
-<h2 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h2><p>ransformer 是Google Brain 2017的提出的一篇论文，它针对RNN的弱点进行重新设计，解决了RNN效率问题和传递中的缺陷等，在很多问题上都超过了RNN的表现。Transfromer的基本结构如下图所示，它是一个N进N出的结构，也就是说每个Transformer单元相当于一层的RNN层，接收一整个句子所有词作为输入，然后为句子中的每个词都做出一个输出。但是与RNN不同的是，Transformer能够同时处理句子中的所有词，并且任意两个词之间的操作距离都是1，这么一来就很好地解决了上面提到的RNN的效率问题和距离问题。</p>
-<img src="/2023/05/15/rnn/transformer.png" class="">
-
-
-<p>参考 :</p>
-<ol>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/69290203">https://zhuanlan.zhihu.com/p/69290203</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517">https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/118029517</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39521554/article/details/80083592">https://blog.csdn.net/qq_39521554/article/details/80083592</a></li>
-</ol>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ul>
+<li>random.random 是生成[0.0, 1.0)区间的一个随机小数, 而且只有一个参数，当需要生成多维数组时应该输入(m,n,…)：<pre class="line-numbers language-none"><code class="language-none">random.random((3,4))<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>random.rand 是生成[0.0, 1.0)区间服从均匀分布的随机小数<pre class="line-numbers language-none"><code class="language-none">random.rand(3,4)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
 
                 
             </div>
@@ -435,7 +439,7 @@ RNN之所以称为循环神经网路，即一个序列当">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhangzedtv.github.io/2023/05/15/rnn/">https://zhangzedtv.github.io/2023/05/15/rnn/</a>
+                    <a href="https://zhangzedtv.github.io/2023/10/01/gaosi/">https://zhangzedtv.github.io/2023/10/01/gaosi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -472,7 +476,11 @@ RNN之所以称为循环神经网路，即一个序列当">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%A6%82%E7%8E%87/">
+                                    <span class="chip bg-color">概率</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -783,58 +791,18 @@ RNN之所以称为循环神经网路，即一个序列当">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/05/17/amazon-sagemaker/">
+                <a href="/2023/10/01/gaosi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Amazon SageMaker">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="高斯分布与机器学习">
                         
-                        <span class="card-title">Amazon SageMaker</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-17
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    机器学习
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/05/15/rnn/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="循环神经网络-RNN（Recurrent Neural Network）">
-                        
-                        <span class="card-title">循环神经网络-RNN（Recurrent Neural Network）</span>
+                        <span class="card-title">高斯分布与机器学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -845,7 +813,57 @@ RNN之所以称为循环神经网路，即一个序列当">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
+                                    数学
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%A6%82%E7%8E%87/">
+                        <span class="chip bg-color">概率</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/07/21/deepar/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="一种基于机器学习模型DeepAR的量化策略">
+                        
+                        <span class="card-title">一种基于机器学习模型DeepAR的量化策略</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-21
                             </span>
                         <span class="publish-author">
                             
@@ -859,7 +877,14 @@ RNN之所以称为循环神经网路，即一个序列当">
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/">
+                        <span class="chip bg-color">量化交易</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

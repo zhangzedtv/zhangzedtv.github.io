@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>高斯分布与机器学习</title>
+      <link href="/2023/10/01/gaosi/"/>
+      <url>/2023/10/01/gaosi/</url>
+      
+        <content type="html"><![CDATA[<p>正态分布，也被称为高斯分布，是一种常见的连续概率分布。它的图形形状为钟形曲线，是一种非常重要且广泛使用的概率分布。</p><h2 id="正态分布的数学表达式"><a href="#正态分布的数学表达式" class="headerlink" title="正态分布的数学表达式"></a>正态分布的数学表达式</h2><p>正态分布的概率密度公式为：</p><p>$$<br>f(x) &#x3D; \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{(x-\mu)^2}{2\sigma^2} }<br>$$</p><p>其中，$\mu$ 是均值，$\sigma$ 是标准差。这个函数描述了在给定均值和标准差的情况下，一个随机变量取某个值的概率。</p><ul><li>大约68%的数据位于均值的一个标准差范围内</li><li>大约95%的数据位于两个标准差范围内</li><li>大约99.7%的数据位于三个标准差范围内</li></ul><h2 id="如何用python生成标准正态分布数据"><a href="#如何用python生成标准正态分布数据" class="headerlink" title="如何用python生成标准正态分布数据"></a>如何用python生成标准正态分布数据</h2><p>numpy中有一个random模块，它包含了生成随机数的各种方法。其中一个方法就是random.randn，它可以返回一个或多个服从标准正态分布（均值为0，方差为1）的随机数。这在很多领域都有应用，比如统计学、机器学习、信号处理等。</p><p>random.randn函数的语法如下：</p><p><code>numpy.random.randn(d0, d1, ..., dn)</code></p><p>其中，d0, d1, …, dn是可选的整数参数，表示返回数组的维度。如果没有提供任何参数，那么函数会返回一个单独的Python浮点数。如果提供了多个参数，那么函数会返回一个形状为(d0, d1, …, dn)的数组，数组中的元素都是从标准正态分布中随机采样的浮点数。</p><p>一维标准正态分布数组示例： </p><pre class="line-numbers language-none"><code class="language-none">&gt;&gt;&gt; import numpy as np&gt;&gt;&gt; np.random.randn(5)array([-0.51733692,  0.48813676, -0.88147002,  1.12901958,  0.68026197])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>二维标准正态分布数组，包含3行4列的随机数：</p><pre class="line-numbers language-none"><code class="language-none">&gt;&gt;&gt; import numpy as np&gt;&gt;&gt; np.random.randn(3, 4)array([[ 1.33262386, -0.88922967, -0.07056098,  0.27340112],       [ 1.00664965, -0.68443807,  0.43801295, -0.35874714],       [-0.19289416, -0.42746963, -1.80435223,  0.02751727]])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="random-randn-函数应用"><a href="#random-randn-函数应用" class="headerlink" title="random.randn 函数应用"></a>random.randn 函数应用</h2><p>假设我们有一只股票，其初始价格为100元，每天的价格变化服从均值为0，标准差为2的正态分布。<br>想要模拟这只股票在100天内的价格走势, 代码如下：</p><pre class="line-numbers language-none"><code class="language-none"># 导入numpy和matplotlib库import numpy as npimport matplotlib.pyplot as plt# 设置初始价格和天数initial_price &#x3D; 100days &#x3D; 100# 生成服从标准正态分布的随机数random_numbers &#x3D; np.random.randn(days)# 计算每天的股票价格stock_prices &#x3D; initial_price + 2 * random_numbers# 绘制股票价格走势图plt.plot(stock_prices)plt.xlabel(&#39;Day&#39;)plt.ylabel(&#39;Price&#39;)plt.title(&#39;Stock Price Simulation&#39;)plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ul><li>random.random 是生成[0.0, 1.0)区间的一个随机小数, 而且只有一个参数，当需要生成多维数组时应该输入(m,n,…)：<pre class="line-numbers language-none"><code class="language-none">random.random((3,4))<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li>random.rand 是生成[0.0, 1.0)区间服从均匀分布的随机小数<pre class="line-numbers language-none"><code class="language-none">random.rand(3,4)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 概率 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一种基于机器学习模型DeepAR的量化策略</title>
       <link href="/2023/07/21/deepar/"/>
       <url>/2023/07/21/deepar/</url>
@@ -127,7 +152,7 @@
       
         <tags>
             
-            <tag> 概率论 </tag>
+            <tag> 概率 </tag>
             
         </tags>
       
